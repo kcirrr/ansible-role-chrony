@@ -27,4 +27,4 @@ MIT
 Author Information
 ------------------
 
-Rick
+kcir

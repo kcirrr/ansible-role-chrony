@@ -1,6 +1,7 @@
 ---
 galaxy_info:
-  author: Rick
+  role_name: chrony
+  author: kcir
   description: Install and configure Chrony
   company: NA
 
@@ -8,13 +9,12 @@ galaxy_info:
 
   license: MIT
 
-  min_ansible_version: 2.5
+  min_ansible_version: 2.12.2
 
   platforms:
     - name: Ubuntu
       versions:
         - focal
-        - bionic
 
   galaxy_tags: []
 
