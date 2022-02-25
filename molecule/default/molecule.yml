@@ -4,13 +4,20 @@ dependency:
 driver:
   name: docker
 platforms:
-  - name: instance
+  - name: ubuntu2004
     image: geerlingguy/docker-ubuntu2004-ansible:latest
     command: ${MOLECULE_DOCKER_COMMAND:-""}
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
-    privileged: true
-    pre_build_image: true
+    privileged: True
+    pre_build_image: True
+  - name: debian11
+    image: geerlingguy/docker-debian11-ansible:latest
+    command: ${MOLECULE_DOCKER_COMMAND:-""}
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: True
+    pre_build_image: True
 provisioner:
   name: ansible
 verifier:
