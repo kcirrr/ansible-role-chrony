@@ -3,7 +3,7 @@
   ansible.builtin.apt:
     name: chrony
     state: present
-    update_cache: True
+    update_cache: true
     cache_valid_time: 3600
   tags: chrony
 
@@ -24,6 +24,6 @@
 - name: Make sure chrony is started and enabled
   ansible.builtin.systemd:
     name: chrony
-    enabled: True
+    enabled: true
     state: started
   tags: chrony
